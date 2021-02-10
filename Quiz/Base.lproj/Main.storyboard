@@ -16,38 +16,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T2V-fH-mMn">
-                                <rect key="frame" x="195" y="130" width="25" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T2V-fH-mMn">
+                                <rect key="frame" x="194.5" y="130" width="25" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VBi-KC-if5">
-                                <rect key="frame" x="163" y="461" width="93" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VBi-KC-if5">
+                                <rect key="frame" x="160.5" y="461" width="93" height="30"/>
                                 <state key="normal" title="Show Answer"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XMs-nV-khZ">
-                                <rect key="frame" x="195" y="432" width="25" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XMs-nV-khZ">
+                                <rect key="frame" x="194.5" y="432" width="25" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="axJ-ib-Kca">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="axJ-ib-Kca">
                                 <rect key="frame" x="158" y="159" width="98" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next Question"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VBi-KC-if5" firstAttribute="top" secondItem="XMs-nV-khZ" secondAttribute="bottom" constant="8" symbolic="YES" id="3lg-Xr-kdm"/>
+                            <constraint firstItem="XMs-nV-khZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="986-Dm-Kl6"/>
+                            <constraint firstItem="axJ-ib-Kca" firstAttribute="top" secondItem="T2V-fH-mMn" secondAttribute="bottom" constant="8" symbolic="YES" id="KVW-DS-tjC"/>
+                            <constraint firstItem="XMs-nV-khZ" firstAttribute="centerX" secondItem="axJ-ib-Kca" secondAttribute="centerX" id="MVm-PD-8Ds"/>
+                            <constraint firstItem="VBi-KC-if5" firstAttribute="centerX" secondItem="axJ-ib-Kca" secondAttribute="centerX" id="UKg-9J-aLs"/>
+                            <constraint firstItem="T2V-fH-mMn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fYz-91-dgo"/>
+                            <constraint firstItem="XMs-nV-khZ" firstAttribute="top" secondItem="axJ-ib-Kca" secondAttribute="bottom" constant="243" id="mxZ-TU-ucq"/>
+                            <constraint firstItem="T2V-fH-mMn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="86" id="zte-e5-Z83"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="answerLabel" destination="XMs-nV-khZ" id="vKB-fs-1gW"/>
+                        <outlet property="questionLabel" destination="T2V-fH-mMn" id="ttB-9a-cuu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="122" y="119"/>
+            <point key="canvasLocation" x="121.73913043478262" y="118.52678571428571"/>
         </scene>
     </scenes>
     <resources>
