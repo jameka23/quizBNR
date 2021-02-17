@@ -25,6 +25,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VBi-KC-if5">
                                 <rect key="frame" x="160.5" y="461" width="93" height="30"/>
                                 <state key="normal" title="Show Answer"/>
+                                <connections>
+                                    <action selector="showAnswerWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rIm-bl-baS"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XMs-nV-khZ">
                                 <rect key="frame" x="194.5" y="432" width="25" height="21"/>
@@ -35,6 +38,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="axJ-ib-Kca">
                                 <rect key="frame" x="158" y="159" width="98" height="30"/>
                                 <state key="normal" title="Next Question"/>
+                                <connections>
+                                    <action selector="showNextQuestionWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IMJ-4C-RyL"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -51,8 +57,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="answerLabel" destination="XMs-nV-khZ" id="vKB-fs-1gW"/>
-                        <outlet property="questionLabel" destination="T2V-fH-mMn" id="ttB-9a-cuu"/>
+                        <outlet property="answerLabel" destination="XMs-nV-khZ" id="zpX-O8-zK6"/>
+                        <outlet property="questionLabel" destination="T2V-fH-mMn" id="dVD-Ao-mvY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
